@@ -1,5 +1,4 @@
 import Head from "next/head";
-// import styles from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
 import ColorSection from "../components/Layout/ColorSection";
 
@@ -12,12 +11,13 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Header />
-      <body>
-        <section id="hero"></section>
-        <section>
-          <ColorSection color="#2b2b"></ColorSection>
-        </section>
-      </body>
+
+      <section id="hero" className="h-[90vh]"></section>
+      <section>
+        <ColorSection color="#2b2b">
+          <p>Ciao</p>
+        </ColorSection>
+      </section>
     </div>
   );
 }
